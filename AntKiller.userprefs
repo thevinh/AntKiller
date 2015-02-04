@@ -1,0 +1,17 @@
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="2/3/2015 4:10:56 AM" StartupItem="AntKiller/AntKiller.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AntKillerProject/MyScene.cs">
+    <Files>
+      <File FileName="AntKillerProject/MyScene.cs" Line="102" Column="102" />
+      <File FileName="AntKillerProject/InsectBehavior.cs" Line="44" Column="44" />
+      <File FileName="AntKiller/App.cs" Line="5" Column="5" />
+      <File FileName="AntKiller/Program.cs" Line="1" Column="1" />
+      <File FileName="AntKiller/Resources/antSprite.xml" Line="1" Column="1" />
+      <File FileName="AntKillerProject/Game.cs" Line="26" Column="26" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:72094581ceb7419c8753176f9e668e2f:819a3815af72fe5dfaf43dd897889491:83f9d0b4e55077b9f74406844d39ad13$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="antSprite.png" width="390" height="229">
+    <sprite n="leftAnt.png" x="2" y="2" w="192" h="225" pX="0.5" pY="0.5"/>
+    <sprite n="rightAnt.png" x="196" y="2" w="192" h="225" pX="0.5" pY="0.5"/>
+</TextureAtlas>
