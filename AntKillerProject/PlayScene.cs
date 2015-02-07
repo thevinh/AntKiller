@@ -20,12 +20,10 @@ using WaveEngine.Framework.Physics2D;
 namespace AntKillerProject
 {
 
-	public class MyScene : Scene
+	public class PlayScene : Scene
 	{
 		protected override void CreateScene ()
 		{
-			//Insert your scene definition here.
-
 			#region Simple test
 			//Create a 3D camera
 			var camera3D = new FreeCamera ("Camera3D", new Vector3 (0, 2, 4), Vector3.Zero) { BackgroundColor = Color.CornflowerBlue };
@@ -35,35 +33,21 @@ namespace AntKillerProject
 			var camera2D = new FixedCamera2D ("Camera2D") { ClearFlags = ClearFlags.DepthAndStencil }; // Transparent background need this clearFlags.
 			EntityManager.Add (camera2D);
 
-			// Draw a simple sprite
-			Entity ant = new Entity ()
-				.AddComponent (new Transform2D (){
-					Origin = Vector2.Center,
-					X = 100,
-					Y = 0,
-				})
-				.AddComponent (new Sprite ("antSprite.wpk"))
-				.AddComponent(Animation2D.Create<TexturePackerGenericXml>("antSprite.xml")
-					.Add("run", new SpriteSheetAnimationSequence()
-						{
-							First = 1,
-							Length = 2,
-							FramesPerSecond = 11
-						}))
-				.AddComponent (new AnimationUI())
-				.AddComponent (new RectangleCollider())
-				.AddComponent (new TouchGestures(){ EnabledGestures = SupportedGesture.Translation } )
-				.AddComponent (new InsectBehavior())
-				.AddComponent (new AnimatedSpriteRenderer());
 
-			EntityManager.Add (ant);
+			// Generator
+			int time = WaveServices.Random.Next(1, 5);
+			WaveServices.TimerFactory.CreateTimer("AntGenerator", TimeSpan.FromSeconds((float)time), () => 
+				{
+					Ant ant = new Ant();
+					EntityManager.Add(ant.GetEntity());
+				}, true);
 
-			var move = new SingleAnimation(0f, WaveServices.Platform.ScreenHeight, 5.0f, EasingFunctions.Cubic );
-
-			AnimationUI animation = ant.FindComponent<AnimationUI>();
-			animation.BeginAnimation(Transform2D.YProperty, move);
-			var anim2D = ant.FindComponent<Animation2D>();
-			anim2D.Play(true);
+			int timeCockroach = WaveServices.Random.Next(4, 6);
+			WaveServices.TimerFactory.CreateTimer("CockroachGenerator", TimeSpan.FromSeconds((float)timeCockroach), () => 
+				{
+					Cockroach cockroach = new Cockroach();
+					EntityManager.Add(cockroach.GetEntity());
+				}, true);
 
 			#endregion
 		}

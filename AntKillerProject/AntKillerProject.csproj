@@ -69,8 +69,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Game.cs" />
-    <Compile Include="MyScene.cs" />
     <Compile Include="InsectBehavior.cs" />
+    <Compile Include="Insect.cs" />
+    <Compile Include="Constant.cs" />
+    <Compile Include="Ant.cs" />
+    <Compile Include="Cockroach.cs" />
+    <Compile Include="PlayScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources.weproj" />

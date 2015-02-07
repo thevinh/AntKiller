@@ -19,7 +19,7 @@ namespace AntKillerProject
 			ViewportManager vm = WaveServices.ViewportManager;
 			vm.Activate (768, 1280, ViewportManager.StretchMode.Uniform);
 
-			ScreenContext screenContext = new ScreenContext (new MyScene ());	
+			ScreenContext screenContext = new ScreenContext (new PlayScene ());	
 			WaveServices.ScreenContextManager.To (screenContext);
 		}
 

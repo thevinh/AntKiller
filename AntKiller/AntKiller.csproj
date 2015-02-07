@@ -109,11 +109,11 @@
     <BundleResource Include="Resources\dieAnt.wpk" />
     <BundleResource Include="Resources\dieCockroach.wpk" />
     <BundleResource Include="Resources\fly.wpk" />
-    <BundleResource Include="Resources\leftAnt.wpk" />
-    <BundleResource Include="Resources\leftCockroach.wpk" />
-    <BundleResource Include="Resources\rightAnt.wpk" />
-    <BundleResource Include="Resources\rightCockroach.wpk" />
     <BundleResource Include="Resources\antSprite.wpk" />
     <BundleResource Include="Resources\antSprite.xml" />
+    <BundleResource Include="Resources\ant.wpk" />
+    <BundleResource Include="Resources\ant.xml" />
+    <BundleResource Include="Resources\cockroach.wpk" />
+    <BundleResource Include="Resources\cockroach.xml" />
   </ItemGroup>
 </Project>

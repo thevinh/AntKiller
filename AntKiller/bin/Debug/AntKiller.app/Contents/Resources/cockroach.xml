@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:07defca29d39ebee85f78c2e517804b1:ba0fc74f9e352e7463e00cd8cd7a02f4:26e6dff7d70664d712bed157c8ebe9ef$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="cockroach.png" width="968" height="262">
+    <sprite n="dieCockroach.png" x="2" y="2" w="320" h="258" pX="0.5" pY="0.5"/>
+    <sprite n="leftCockroach.png" x="324" y="2" w="320" h="258" pX="0.5" pY="0.5"/>
+    <sprite n="rightCockroach.png" x="646" y="2" w="320" h="258" pX="0.5" pY="0.5"/>
+</TextureAtlas>
